@@ -5,6 +5,29 @@ import numpy as np
 model = joblib.load("diabetes_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
+st.markdown(
+    """
+    <style>
+    body{
+         background-color: #f0f2f6;
+        color: #333333;
+    }
+    .stButton>button {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    .stNumberInput>div>div>input {
+        border: 2px solid #4CAF50;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("Diabetes Prediction App")
 
 preg = st.number_input("Pregnancies", min_value=0)

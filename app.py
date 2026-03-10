@@ -15,7 +15,7 @@ st.markdown(
     .stButton>button {
         background-color: #4CAF50;
         color: white;
-        font-size: 18px;
+        font-size: 10px;
         border-radius: 10px;
     }
     .stNumberInput>div>div>input {
